@@ -1,0 +1,2 @@
+window.RT_CONFIG={API_URL:"PASTE_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE",APP_NAME:"RT 005/05 Cilodong"};
+window.rtApi=async function(action,payload={}){if(!RT_CONFIG.API_URL||RT_CONFIG.API_URL.includes("PASTE_"))throw new Error("API belum dikonfigurasi. Isi API_URL di js/config.js.");const r=await fetch(RT_CONFIG.API_URL,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({action,...payload})});const d=await r.json();if(!d.ok)throw new Error(d.message||"Permintaan gagal");return d};

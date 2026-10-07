@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard - RT 005/05</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"></head>
+<body>
+<header class="topbar"><div class="brand"><img src="assets/logo-rt005.png" alt="Logo"><div><b>RT 005 / RW 05</b><small>Dashboard Aplikasi</small></div></div><button id="logoutBtn" class="btn outline">Keluar</button></header>
+<main class="container"><section class="welcome"><p class="eyebrow">DASHBOARD</p><h1 id="welcomeName">Selamat datang</h1><p id="roleText" class="muted"></p></section>
+<section class="stat-grid"><div class="stat"><span>👥 Jumlah Warga</span><b id="totalWarga">-</b></div><div class="stat"><span>🏠 Kepala Keluarga</span><b id="totalKK">-</b></div><div class="stat"><span>💰 Saldo Kas</span><b id="saldoKas">-</b></div><div class="stat"><span>🚨 Panic Aktif</span><b id="panicAktif">-</b></div></section>
+<section class="menu-grid">
+<button data-feature="warga">👥<strong>Data Warga</strong><small>Data sesuai hak akses</small></button>
+<button data-feature="kas">💰<strong>Buku Kas</strong><small>Masuk & keluar</small></button>
+<button data-feature="pengaduan">📢<strong>Pengaduan</strong><small>Laporan warga</small></button>
+<button data-feature="panic">🚨<strong>Panic Button</strong><small>Keadaan darurat</small></button>
+<button data-feature="cctv">📹<strong>CCTV Warga</strong><small>Kamera terdaftar</small></button>
+<button data-feature="qris">💳<strong>QRIS</strong><small>Pembayaran</small></button>
+<button data-feature="pengguna" class="admin-only">👤<strong>Pengguna</strong><small>Admin</small></button>
+<button data-feature="wa" class="admin-only">💬<strong>WhatsApp Gateway</strong><small>Admin</small></button>
+</section>
+<section id="content" class="panel"><h2>Ringkasan</h2><p>Pilih menu untuk memulai.</p></section></main>
+<script src="js/config.js"></script><script src="js/dashboard.js"></script></body></html>
